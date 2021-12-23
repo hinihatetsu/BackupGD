@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>backupGD package &mdash; backupGD 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="backupGD" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> backupGD
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">backupGD</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">backupGD package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD.api_wapper">backupGD.api_wapper module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD.app">backupGD.app module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD.backup">backupGD.backup module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD.cli">backupGD.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD.credentials">backupGD.credentials module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD.exceptions">backupGD.exceptions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD.log">backupGD.log module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-backupGD">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">backupGD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">backupGD</a> &raquo;</li>
+      <li>backupGD package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/backupGD.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="backupgd-package">
+<h1>backupGD package<a class="headerlink" href="#backupgd-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-backupGD.api_wapper">
+<span id="backupgd-api-wapper-module"></span><h2>backupGD.api_wapper module<a class="headerlink" href="#module-backupGD.api_wapper" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="backupGD.api_wapper.GoogleDriveAPI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.api_wapper.</span></span><span class="sig-name descname"><span class="pre">GoogleDriveAPI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><span class="pre">backupGD.credentials.Credentials</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#backupGD.api_wapper.GoogleDriveAPI" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>GoogleDrive API Wrapper.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">backupGD</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">credentials</span> <span class="o">=</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">get_credentials</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">GoogleDriveAPI</span><span class="p">(</span><span class="n">credentials</span><span class="p">)</span> <span class="k">as</span> <span class="n">drive</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">drive</span><span class="o">.</span><span class="n">create_folder</span><span class="p">(</span><span class="s1">&#39;backupGD&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>credentials</strong> (<a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><em>backupGD.credentials.Credentials</em></a>) – Credentials for Google API.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If credentials is invalid.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.api_wapper.GoogleDriveAPI.create_folder">
+<span class="sig-name descname"><span class="pre">create_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.api_wapper.GoogleDriveAPI.create_folder" title="Permalink to this definition"></a></dt>
+<dd><p>Create folder on GoogleDrive</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folder_name</strong> (<em>str</em>) – Folder name on GoogleDrive.</p></li>
+<li><p><strong>folder_id</strong> (<em>str</em><em> | </em><em>None</em>) – Parent folder ID on GoogleDrive.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ID of created folder.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.api_wapper.GoogleDriveAPI.delete_file">
+<span class="sig-name descname"><span class="pre">delete_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.api_wapper.GoogleDriveAPI.delete_file" title="Permalink to this definition"></a></dt>
+<dd><p>Delete file on GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_id</strong> (<em>str</em>) – File ID to delete.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.api_wapper.GoogleDriveAPI.get_folder_id">
+<span class="sig-name descname"><span class="pre">get_folder_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#backupGD.api_wapper.GoogleDriveAPI.get_folder_id" title="Permalink to this definition"></a></dt>
+<dd><p>Get folder ID on GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>folder_name</strong> (<em>str</em>) – Folder name on GoogleDrive.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Folder ID if exists else None.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str | None</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.api_wapper.GoogleDriveAPI.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.api_wapper.GoogleDriveAPI.refresh" title="Permalink to this definition"></a></dt>
+<dd><p>Refresh credentials.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#backupGD.exceptions.RefreshError" title="backupGD.exceptions.RefreshError"><strong>backupGD.exceptions.RefreshError</strong></a> – If the credentials could not be refreshed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.api_wapper.GoogleDriveAPI.upload_backup">
+<span class="sig-name descname"><span class="pre">upload_backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tarfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.api_wapper.GoogleDriveAPI.upload_backup" title="Permalink to this definition"></a></dt>
+<dd><p>Upload a gzipped tar file to GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tarfile</strong> (<em>str</em><em> | </em><em>os.Pathlike</em><em>[</em><em>str</em><em>]</em>) – Path to gzipped tar file to upload.</p></li>
+<li><p><strong>folder_id</strong> (<em>str</em><em> | </em><em>None</em>) – Folder ID of GoogleDrive.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>File ID of uploaded file.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>FileNotFoundError</strong> – If “tarfile” could not be found.</p></li>
+<li><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.api_wapper.drive">
+<span class="sig-prename descclassname"><span class="pre">backupGD.api_wapper.</span></span><span class="sig-name descname"><span class="pre">drive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#backupGD.api_wapper.GoogleDriveAPI" title="backupGD.api_wapper.GoogleDriveAPI"><span class="pre">backupGD.api_wapper.GoogleDriveAPI</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#backupGD.api_wapper.drive" title="Permalink to this definition"></a></dt>
+<dd><p>High Level API for GoogleDriveAPI.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>client_secret</strong> (<em>str</em><em> | </em><em>os.PathLike</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – Path to client secret json file.</p>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>GoogleDriveAPI</em></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">backupGD</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">backup</span> <span class="o">=</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">create_backup</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">drive</span><span class="p">()</span> <span class="k">as</span> <span class="n">drive</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">drive</span><span class="o">.</span><span class="n">upload_backup</span><span class="p">(</span><span class="n">backup</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-backupGD.app">
+<span id="backupgd-app-module"></span><h2>backupGD.app module<a class="headerlink" href="#module-backupGD.app" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="backupGD.app.App">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.app.</span></span><span class="sig-name descname"><span class="pre">App</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credentials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><span class="pre">backupGD.credentials.Credentials</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#backupGD.app.App" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents backupGD application.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">backupGD</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">backupGD.app</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">creds</span> <span class="o">=</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">get_credentials</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">app</span> <span class="o">=</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">App</span><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">credentials</span><span class="o">=</span><span class="n">creds</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">folder_name</span><span class="o">=</span><span class="s1">&#39;backupGD&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>keep<span class="classifier">int</span></dt><dd><p>Max number of backup files on GoogleDrive</p>
+</dd>
+<dt>credentials<span class="classifier">backupGD.credentials.Credentials</span></dt><dd><p>Credentials for GoogleDrive API</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.app.App.create_backup">
+<span class="sig-name descname"><span class="pre">create_backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.app.App.create_backup" title="Permalink to this definition"></a></dt>
+<dd><p>Create gzipped tar file of path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em><em> | </em><em>os.PathLike</em><em>[</em><em>str</em><em>]</em>) – Path to file or directory to back up.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Path of created tar file</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.app.App.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.app.App.delete" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a file or directory on GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_id</strong> (<em>str</em>) – File ID to delete.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backupGD.app.App.keep">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">keep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#backupGD.app.App.keep" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.app.App.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.app.App.run" title="Permalink to this definition"></a></dt>
+<dd><p>Run application.</p>
+<ol class="arabic simple">
+<li><p>Create backup</p></li>
+<li><p>Upload the backup</p></li>
+<li><p>Delete the oldest backup if stack is full.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em><em> | </em><em>os.PathLike</em><em>[</em><em>str</em><em>]</em>) – Path to file or directory to back up.</p></li>
+<li><p><strong>folder_name</strong> (<em>str</em>) – Folder name of GoogleDrive.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.app.App.upload">
+<span class="sig-name descname"><span class="pre">upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tarfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.app.App.upload" title="Permalink to this definition"></a></dt>
+<dd><p>Upload a gzipped tar file to GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tarfile</strong> (<em>str</em>) – Path to gzipped tar file to upload.</p></li>
+<li><p><strong>folder_name</strong> (<em>str</em>) – Folder name of GoogleDrive.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>File ID of uploaded file.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-backupGD.backup">
+<span id="backupgd-backup-module"></span><h2>backupGD.backup module<a class="headerlink" href="#module-backupGD.backup" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.backup.create_backup">
+<span class="sig-prename descclassname"><span class="pre">backupGD.backup.</span></span><span class="sig-name descname"><span class="pre">create_backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.backup.create_backup" title="Permalink to this definition"></a></dt>
+<dd><p>Create gzipped tar file of <cite>path</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – Path to file or directory to back up.</p></li>
+<li><p><strong>dir</strong> – Directory which tar file is created on.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Path of created tar file</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>FileNotFoundError</strong> – If “path” or/and “dir” could not be found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-backupGD.cli">
+<span id="backupgd-cli-module"></span><h2>backupGD.cli module<a class="headerlink" href="#module-backupGD.cli" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.cli.</span></span><span class="sig-name descname"><span class="pre">RootNamespace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#backupGD.cli.RootNamespace" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.Namespace</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.at">
+<span class="sig-name descname"><span class="pre">at</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'00:00'</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.at" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.client_secret">
+<span class="sig-name descname"><span class="pre">client_secret</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/workspaces/backupGD/client_secret.json')</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.client_secret" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.day">
+<span class="sig-name descname"><span class="pre">day</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'days'</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.day" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.every">
+<span class="sig-name descname"><span class="pre">every</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.every" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.keep">
+<span class="sig-name descname"><span class="pre">keep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.keep" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.log_level">
+<span class="sig-name descname"><span class="pre">log_level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'info'</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.log_level" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'backupGD'</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.path">
+<span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/workspaces/backupGD/data')</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.token">
+<span class="sig-name descname"><span class="pre">token</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/workspaces/backupGD/token.json')</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.token" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="backupGD.cli.RootNamespace.version">
+<span class="sig-name descname"><span class="pre">version</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#backupGD.cli.RootNamespace.version" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.cli.create_parser">
+<span class="sig-prename descclassname"><span class="pre">backupGD.cli.</span></span><span class="sig-name descname"><span class="pre">create_parser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">argparse.ArgumentParser</span></span></span><a class="headerlink" href="#backupGD.cli.create_parser" title="Permalink to this definition"></a></dt>
+<dd><p>Create Argument Parser</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.cli.get_credentials">
+<span class="sig-prename descclassname"><span class="pre">backupGD.cli.</span></span><span class="sig-name descname"><span class="pre">get_credentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#backupGD.cli.RootNamespace" title="backupGD.cli.RootNamespace"><span class="pre">backupGD.cli.RootNamespace</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><span class="pre">backupGD.credentials.Credentials</span></a></span></span><a class="headerlink" href="#backupGD.cli.get_credentials" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.cli.main">
+<span class="sig-prename descclassname"><span class="pre">backupGD.cli.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.cli.main" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-backupGD.credentials">
+<span id="backupgd-credentials-module"></span><h2>backupGD.credentials module<a class="headerlink" href="#module-backupGD.credentials" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="backupGD.credentials.Credentials">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.credentials.</span></span><span class="sig-name descname"><span class="pre">Credentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refresh_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scopes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_scopes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quota_project_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expiry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rapt_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refresh_handler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable_reauth_refresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#backupGD.credentials.Credentials" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">google.oauth2.credentials.Credentials</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>token</strong> (<em>Optional</em><em>(</em><em>str</em><em>)</em>) – The OAuth 2.0 access token. Can be None
+if refresh information is provided.</p></li>
+<li><p><strong>refresh_token</strong> (<em>str</em>) – The OAuth 2.0 refresh token. If specified,
+credentials can be refreshed.</p></li>
+<li><p><strong>id_token</strong> (<em>str</em>) – The Open ID Connect ID Token.</p></li>
+<li><p><strong>token_uri</strong> (<em>str</em>) – The OAuth 2.0 authorization server’s token
+endpoint URI. Must be specified for refresh, can be left as
+None if the token can not be refreshed.</p></li>
+<li><p><strong>client_id</strong> (<em>str</em>) – The OAuth 2.0 client ID. Must be specified for
+refresh, can be left as None if the token can not be refreshed.</p></li>
+<li><p><strong>client_secret</strong> (<em>str</em>) – The OAuth 2.0 client secret. Must be specified
+for refresh, can be left as None if the token can not be
+refreshed.</p></li>
+<li><p><strong>scopes</strong> (<em>Sequence</em><em>[</em><em>str</em><em>]</em>) – The scopes used to obtain authorization.
+This parameter is used by <code class="xref py py-meth docutils literal notranslate"><span class="pre">has_scopes()</span></code>. OAuth 2.0
+credentials can not request additional scopes after
+authorization. The scopes must be derivable from the refresh
+token if refresh information is provided (e.g. The refresh
+token scopes are a superset of this or contain a wild card
+scope like ‘<a class="reference external" href="https://www.googleapis.com/auth/any-api">https://www.googleapis.com/auth/any-api</a>’).</p></li>
+<li><p><strong>default_scopes</strong> (<em>Sequence</em><em>[</em><em>str</em><em>]</em>) – Default scopes passed by a
+Google client library. Use ‘scopes’ for user-defined scopes.</p></li>
+<li><p><strong>quota_project_id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – The project ID used for quota and billing.
+This project may be different from the project used to
+create the credentials.</p></li>
+<li><p><strong>rapt_token</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – The reauth Proof Token.</p></li>
+<li><p><strong>refresh_handler</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>google.auth.transport.Request</em><em>, </em><em>Sequence</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>[</em><em>str</em><em>, </em><em>datetime</em><em>]</em><em>]</em><em>]</em>) – A callable which takes in the HTTP request callable and the list of
+OAuth scopes and when called returns an access token string for the
+requested scopes and its expiry datetime. This is useful when no
+refresh tokens are provided and tokens are obtained by calling
+some external process on demand. It is particularly useful for
+retrieving downscoped tokens from a token broker.</p></li>
+<li><p><strong>enable_reauth_refresh</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – Whether reauth refresh flow
+should be used. This flag is for gcloud to use only.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.credentials.get_credentials">
+<span class="sig-prename descclassname"><span class="pre">backupGD.credentials.</span></span><span class="sig-name descname"><span class="pre">get_credentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_local_server</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><span class="pre">backupGD.credentials.Credentials</span></a></span></span><a class="headerlink" href="#backupGD.credentials.get_credentials" title="Permalink to this definition"></a></dt>
+<dd><p>Get credentials for google API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client_secret</strong> (<em>str</em><em> | </em><em>os.PathLike</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – Path to client secret json file.</p></li>
+<li><p><strong>use_local_server</strong> (<em>bool</em>) – If true, use local server(port: 8080) for oauth flow.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>google.oauth2.credentials.Credentials</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>FileNotFoundError</strong> – If “client_secret” could not be found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-backupGD.exceptions">
+<span id="backupgd-exceptions-module"></span><h2>backupGD.exceptions module<a class="headerlink" href="#module-backupGD.exceptions" title="Permalink to this headline"></a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="backupGD.exceptions.GoogleDriveAPIError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.exceptions.</span></span><span class="sig-name descname"><span class="pre">GoogleDriveAPIError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#backupGD.exceptions.GoogleDriveAPIError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="backupGD.exceptions.GoogleDriveAPIError.message">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#backupGD.exceptions.GoogleDriveAPIError.message" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backupGD.exceptions.GoogleDriveAPIError.status_code">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status_code</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#backupGD.exceptions.GoogleDriveAPIError.status_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="backupGD.exceptions.RefreshError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.exceptions.</span></span><span class="sig-name descname"><span class="pre">RefreshError</span></span><a class="headerlink" href="#backupGD.exceptions.RefreshError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">google.auth.exceptions.RefreshError</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-backupGD.log">
+<span id="backupgd-log-module"></span><h2>backupGD.log module<a class="headerlink" href="#module-backupGD.log" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.log.setup">
+<span class="sig-prename descclassname"><span class="pre">backupGD.log.</span></span><span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.log.setup" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-backupGD">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-backupGD" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="backupGD.Credentials">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.</span></span><span class="sig-name descname"><span class="pre">Credentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refresh_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scopes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_scopes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quota_project_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expiry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rapt_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refresh_handler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable_reauth_refresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#backupGD.Credentials" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">google.oauth2.credentials.Credentials</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>token</strong> (<em>Optional</em><em>(</em><em>str</em><em>)</em>) – The OAuth 2.0 access token. Can be None
+if refresh information is provided.</p></li>
+<li><p><strong>refresh_token</strong> (<em>str</em>) – The OAuth 2.0 refresh token. If specified,
+credentials can be refreshed.</p></li>
+<li><p><strong>id_token</strong> (<em>str</em>) – The Open ID Connect ID Token.</p></li>
+<li><p><strong>token_uri</strong> (<em>str</em>) – The OAuth 2.0 authorization server’s token
+endpoint URI. Must be specified for refresh, can be left as
+None if the token can not be refreshed.</p></li>
+<li><p><strong>client_id</strong> (<em>str</em>) – The OAuth 2.0 client ID. Must be specified for
+refresh, can be left as None if the token can not be refreshed.</p></li>
+<li><p><strong>client_secret</strong> (<em>str</em>) – The OAuth 2.0 client secret. Must be specified
+for refresh, can be left as None if the token can not be
+refreshed.</p></li>
+<li><p><strong>scopes</strong> (<em>Sequence</em><em>[</em><em>str</em><em>]</em>) – The scopes used to obtain authorization.
+This parameter is used by <code class="xref py py-meth docutils literal notranslate"><span class="pre">has_scopes()</span></code>. OAuth 2.0
+credentials can not request additional scopes after
+authorization. The scopes must be derivable from the refresh
+token if refresh information is provided (e.g. The refresh
+token scopes are a superset of this or contain a wild card
+scope like ‘<a class="reference external" href="https://www.googleapis.com/auth/any-api">https://www.googleapis.com/auth/any-api</a>’).</p></li>
+<li><p><strong>default_scopes</strong> (<em>Sequence</em><em>[</em><em>str</em><em>]</em>) – Default scopes passed by a
+Google client library. Use ‘scopes’ for user-defined scopes.</p></li>
+<li><p><strong>quota_project_id</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – The project ID used for quota and billing.
+This project may be different from the project used to
+create the credentials.</p></li>
+<li><p><strong>rapt_token</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – The reauth Proof Token.</p></li>
+<li><p><strong>refresh_handler</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>google.auth.transport.Request</em><em>, </em><em>Sequence</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>[</em><em>str</em><em>, </em><em>datetime</em><em>]</em><em>]</em><em>]</em>) – A callable which takes in the HTTP request callable and the list of
+OAuth scopes and when called returns an access token string for the
+requested scopes and its expiry datetime. This is useful when no
+refresh tokens are provided and tokens are obtained by calling
+some external process on demand. It is particularly useful for
+retrieving downscoped tokens from a token broker.</p></li>
+<li><p><strong>enable_reauth_refresh</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – Whether reauth refresh flow
+should be used. This flag is for gcloud to use only.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="backupGD.GoogleDriveAPI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backupGD.</span></span><span class="sig-name descname"><span class="pre">GoogleDriveAPI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><span class="pre">backupGD.credentials.Credentials</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#backupGD.GoogleDriveAPI" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>GoogleDrive API Wrapper.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">backupGD</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">credentials</span> <span class="o">=</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">get_credentials</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">GoogleDriveAPI</span><span class="p">(</span><span class="n">credentials</span><span class="p">)</span> <span class="k">as</span> <span class="n">drive</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">drive</span><span class="o">.</span><span class="n">create_folder</span><span class="p">(</span><span class="s1">&#39;backupGD&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>credentials</strong> (<a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><em>backupGD.credentials.Credentials</em></a>) – Credentials for Google API.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If credentials is invalid.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.GoogleDriveAPI.create_folder">
+<span class="sig-name descname"><span class="pre">create_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.GoogleDriveAPI.create_folder" title="Permalink to this definition"></a></dt>
+<dd><p>Create folder on GoogleDrive</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folder_name</strong> (<em>str</em>) – Folder name on GoogleDrive.</p></li>
+<li><p><strong>folder_id</strong> (<em>str</em><em> | </em><em>None</em>) – Parent folder ID on GoogleDrive.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ID of created folder.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.GoogleDriveAPI.delete_file">
+<span class="sig-name descname"><span class="pre">delete_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.GoogleDriveAPI.delete_file" title="Permalink to this definition"></a></dt>
+<dd><p>Delete file on GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_id</strong> (<em>str</em>) – File ID to delete.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.GoogleDriveAPI.get_folder_id">
+<span class="sig-name descname"><span class="pre">get_folder_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#backupGD.GoogleDriveAPI.get_folder_id" title="Permalink to this definition"></a></dt>
+<dd><p>Get folder ID on GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>folder_name</strong> (<em>str</em>) – Folder name on GoogleDrive.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Folder ID if exists else None.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str | None</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.GoogleDriveAPI.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#backupGD.GoogleDriveAPI.refresh" title="Permalink to this definition"></a></dt>
+<dd><p>Refresh credentials.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#backupGD.exceptions.RefreshError" title="backupGD.exceptions.RefreshError"><strong>backupGD.exceptions.RefreshError</strong></a> – If the credentials could not be refreshed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backupGD.GoogleDriveAPI.upload_backup">
+<span class="sig-name descname"><span class="pre">upload_backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tarfile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.GoogleDriveAPI.upload_backup" title="Permalink to this definition"></a></dt>
+<dd><p>Upload a gzipped tar file to GoogleDrive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tarfile</strong> (<em>str</em><em> | </em><em>os.Pathlike</em><em>[</em><em>str</em><em>]</em>) – Path to gzipped tar file to upload.</p></li>
+<li><p><strong>folder_id</strong> (<em>str</em><em> | </em><em>None</em>) – Folder ID of GoogleDrive.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>File ID of uploaded file.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>FileNotFoundError</strong> – If “tarfile” could not be found.</p></li>
+<li><p><a class="reference internal" href="#backupGD.exceptions.GoogleDriveAPIError" title="backupGD.exceptions.GoogleDriveAPIError"><strong>backupGD.exceptions.GoogleDriveAPIError</strong></a> – If GoogleDrive API call failed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.create_backup">
+<span class="sig-prename descclassname"><span class="pre">backupGD.</span></span><span class="sig-name descname"><span class="pre">create_backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#backupGD.create_backup" title="Permalink to this definition"></a></dt>
+<dd><p>Create gzipped tar file of <cite>path</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – Path to file or directory to back up.</p></li>
+<li><p><strong>dir</strong> – Directory which tar file is created on.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Path of created tar file</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>FileNotFoundError</strong> – If “path” or/and “dir” could not be found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.drive">
+<span class="sig-prename descclassname"><span class="pre">backupGD.</span></span><span class="sig-name descname"><span class="pre">drive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#backupGD.api_wapper.GoogleDriveAPI" title="backupGD.api_wapper.GoogleDriveAPI"><span class="pre">backupGD.api_wapper.GoogleDriveAPI</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#backupGD.drive" title="Permalink to this definition"></a></dt>
+<dd><p>High Level API for GoogleDriveAPI.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>client_secret</strong> (<em>str</em><em> | </em><em>os.PathLike</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – Path to client secret json file.</p>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>GoogleDriveAPI</em></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">backupGD</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">backup</span> <span class="o">=</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">create_backup</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">backupGD</span><span class="o">.</span><span class="n">drive</span><span class="p">()</span> <span class="k">as</span> <span class="n">drive</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">drive</span><span class="o">.</span><span class="n">upload_backup</span><span class="p">(</span><span class="n">backup</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backupGD.get_credentials">
+<span class="sig-prename descclassname"><span class="pre">backupGD.</span></span><span class="sig-name descname"><span class="pre">get_credentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">os.PathLike</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_local_server</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#backupGD.credentials.Credentials" title="backupGD.credentials.Credentials"><span class="pre">backupGD.credentials.Credentials</span></a></span></span><a class="headerlink" href="#backupGD.get_credentials" title="Permalink to this definition"></a></dt>
+<dd><p>Get credentials for google API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client_secret</strong> (<em>str</em><em> | </em><em>os.PathLike</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – Path to client secret json file.</p></li>
+<li><p><strong>use_local_server</strong> (<em>bool</em>) – If true, use local server(port: 8080) for oauth flow.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>google.oauth2.credentials.Credentials</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>FileNotFoundError</strong> – If “client_secret” could not be found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="backupGD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Shuhei Nitta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

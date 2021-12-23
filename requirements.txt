@@ -1,0 +1,12 @@
+google-auth
+google-auth-oauthlib 
+google-api-python-client
+schedule
+
+# For test
+mypy
+coverage
+
+# For docs
+sphinx
+sphinx-rtd-theme

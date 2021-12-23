@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; backupGD 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="backupGD" href="modules.html" />
+    <link rel="prev" title="Welcome to BackupGD’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> backupGD
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">backupGD</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">backupGD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/README.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p># BackupGD</p>
+<p>Back up file or directory as gzipped tar file on GoogleDrive.</p>
+<p>## Requirements</p>
+<ul class="simple">
+<li><p>Python3.9 or later</p></li>
+</ul>
+<p>Optionals</p>
+<ul class="simple">
+<li><p>client_secret.json (OAuth Client ID from Google Cloud Platform)</p></li>
+</ul>
+<p>See also <a class="reference external" href="https://developers.google.com/workspace/guides/create-credentials">https://developers.google.com/workspace/guides/create-credentials</a></p>
+<p>## Installation
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/hinihat/backupGD</span>
+<span class="pre">`</span></code></p>
+<p>## Example
+<a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>python
+import backupGD</p>
+<p>tarfile = backupGD.create_backup(‘./data’) # Create gzipped tar file
+with backupGD.drive() as drive:</p>
+<blockquote>
+<div><p>folder_id = drive.create_folder(‘backupGD’) # Create folder on GoogleDrive
+drive.upload_backup(tarfile, folder_id=folder_id) # Upload tar file</p>
+</div></blockquote>
+<p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
+<p>## CLI
+<a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a>shell
+$ backupGD –help
+usage: backupGD [optional arguments]</p>
+<dl>
+<dt>optional arguments:</dt><dd><dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>–log-level {critical,error,warning,info,debug}</dt><dd><p>logging level [default: info]</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">--version</span></kbd></dt>
+<dd><p>show version</p>
+</dd>
+<dt><kbd><span class="option">--name <var>TEXT</var></span></kbd></dt>
+<dd><p>folder name on GoogleDrive [default: backupGD]</p>
+</dd>
+<dt><kbd><span class="option">--path <var>PATH</var></span></kbd></dt>
+<dd><p>path to file or directory to back up [default:
+/workspaces/backupGD/data]</p>
+</dd>
+<dt><kbd><span class="option">--every <var>INTEGER</var></span></kbd></dt>
+<dd><p>interval [default: 1]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>–day {days,sunday,monday,tuesday,wednesday,thursday,friday,saturday,weeks}</dt><dd><p>days to keep in drive [default: days]</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">--at <var>TEXT</var></span></kbd></dt>
+<dd><p>time to run [default: 00:00]</p>
+</dd>
+<dt><kbd><span class="option">--keep <var>INTEGER</var></span></kbd></dt>
+<dd><p>max number of backup files on GoogleDrive [default: 16]</p>
+</dd>
+<dt><kbd><span class="option">--client-secret <var>PATH</var></span></kbd></dt>
+<dd><p>path to client_secret.json [default:
+/workspaces/backupGD/client_secret.json]</p>
+</dd>
+<dt><kbd><span class="option">--token <var>PATH</var></span></kbd></dt>
+<dd><p>path to OAuth2.0 token [default: /workspaces/backupGD/token.json]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>$ backupBD –name backup –path ./data –day sunday –at 12:00
+<a href="#id13"><span class="problematic" id="id14">``</span></a><a href="#id15"><span class="problematic" id="id16">`</span></a></p>
+<p>## Docker
+<code class="docutils literal notranslate"><span class="pre">`shell</span>
+<span class="pre">$</span> <span class="pre">docker</span> <span class="pre">run</span> <span class="pre">--rm</span> <span class="pre">hinihat/backupgd</span> <span class="pre">--help</span>
+<span class="pre">#</span> <span class="pre">The</span> <span class="pre">same</span> <span class="pre">content</span> <span class="pre">of</span> <span class="pre">cli</span> <span class="pre">help</span>
+<span class="pre">`</span></code></p>
+<p><a href="#id17"><span class="problematic" id="id18">``</span></a><a href="#id19"><span class="problematic" id="id20">`</span></a>yaml
+version: “3.4”</p>
+<dl>
+<dt>services:</dt><dd><dl>
+<dt>backupGD:</dt><dd><p>image: hinihat/backupGD
+restart: always
+volumes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>type: bind
+source: ./data
+target: /backupGD/data
+read_only: true</p></li>
+<li><p>type: bind
+source: token.json
+target: /backupGD/token.json</p></li>
+</ul>
+</div></blockquote>
+<p>command: –every 3</p>
+</dd>
+</dl>
+<p># Other services here</p>
+</dd>
+</dl>
+<p><a href="#id21"><span class="problematic" id="id22">``</span></a>`
+In order to get <cite>token.json</cite>, run the following script.
+<a href="#id23"><span class="problematic" id="id24">``</span></a><a href="#id25"><span class="problematic" id="id26">`</span></a>python
+import backupGD
+credentials = backupGD.get_credentials()
+with open(‘token.json’, ‘w’) as f:</p>
+<blockquote>
+<div><p>f.write(credentials.to_json())</p>
+</div></blockquote>
+<p><a href="#id27"><span class="problematic" id="id28">``</span></a><a href="#id29"><span class="problematic" id="id30">`</span></a></p>
+<p>## License
+MIT License</p>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to BackupGD’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modules.html" class="btn btn-neutral float-right" title="backupGD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Shuhei Nitta.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
